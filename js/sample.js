@@ -20,7 +20,7 @@ iamharsh.set({
  });
 
  iamharsh.start();
- iamharsh.reveal(4000);
+ iamharsh.reveal(2000);
 
  var overlay = document.getElementById("preloader");
  window.addEventListener('load', function(){
