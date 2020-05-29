@@ -1,0 +1,592 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inconsolata:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,700&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Passion+One&display=swap');
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+
+body
+{
+    font-family: Helvetica;
+}
+
+.banner-section
+{
+	background: url(../images/banner1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: auto;
+	height: 100vh;
+
+}
+.imgButton {
+  position: relative;
+}
+
+.imgButton img {
+  transform: translateY(0);
+  transition: all .4s ease-out;
+  border: .5em solid #e89c0c;
+  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
+  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .3);
+  border-radius: 25px;
+}
+
+.one:before {
+  content: 'Hi I am a #Hari!'
+}
+
+.imgButton:before {
+  position: absolute;
+  padding: 15px 20px;
+  left: -60px;
+  bottom: -9px;
+  font-size: 20px;
+  font-family: 'Gloria Hallelujah', cursive;
+  color: #7107E9;
+  background: #ffffff;
+  transition: all .4s ease-out;
+  transform: translateY(150px);
+  opacity: 0;
+  z-index: 1;
+  border-radius: 100px;
+  font-weight: normal;
+  border: .2em solid #E89C0C;
+  -webkit-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
+  -moz-box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
+  box-shadow: 8px 7px 5px 0px rgba(0, 0, 0, .5);
+}
+
+.imgButton:hover:before {
+  bottom: 45px;
+  opacity: 100;
+}
+
+.imgButton:hover img {
+  transform: translateY(-10px);
+
+}
+
+
+.floatButton:hover,
+.floatButton:focus,
+.floatButton:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.imgButton img {
+      filter: gray;
+      -webkit-filter: grayscale(1);
+      -webkit-transition: all .8s ease-in-out;  
+    }
+
+    .imgButton img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.01);
+    }
+
+	
+.profile-img
+{
+	padding: 10rem 3rem;
+}
+
+
+.icon-button {
+	background-color: white;
+	border-radius: 2.6rem;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1.3rem;
+	height: 3.5rem;
+	line-height: 2.6rem;
+	margin: 0 5px;
+	position: relative;
+	text-align: center;
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+	width: 3.5rem;
+}
+
+
+.icon-button span {
+	border-radius: 0;
+	display: block;
+	height: 0;
+	left: 50%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 0;
+}
+
+.icon-button:hover span {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 2.6rem;
+	margin: -1.75rem;
+}
+
+/* Icons */
+.icon-button i {
+	background: none;
+	color: white;
+	height: 3.5rem;
+	left: 0;
+	line-height: 3.5rem;
+	position: absolute;
+	top: 0;
+	-webkit-transition: all 0.3s;
+	   -moz-transition: all 0.3s;
+	     -o-transition: all 0.3s;
+	        transition: all 0.3s;
+	width: 3.5rem;
+	z-index: 10;
+}
+
+
+.twitter span {
+	background-color: #4099ff;
+}
+.facebook span {
+	background-color: #3B5998;
+}
+.google-plus span {
+	background-color: #db5a3c;
+}
+.tumblr span {
+	background-color: #34526f;
+}
+.instagram span {
+	background-color: #517fa4;
+}
+.youtube span {
+	background-color: #bb0000;
+}
+.pinterest span {
+	background-color: #cb2027;
+}
+
+
+
+.icon-button .icon-twitter {
+	color: #4099ff;
+}
+.icon-button .icon-facebook {
+	color: #3B5998;
+}
+.icon-button .fa-tumblr {
+	color: #34526f;
+}
+.icon-button .icon-google-plus {
+	color: #db5a3c;
+}
+.icon-button .fa-instagram {
+	color: #517fa4;
+}
+.icon-button .fa-youtube {
+	color: #bb0000;
+}
+
+.icon-button:hover .icon-twitter,
+.icon-button:hover .icon-facebook,
+.icon-button:hover .icon-google-plus,
+.icon-button:hover .fa-tumblr,
+.icon-button:hover .fa-instagram,
+.icon-button:hover .fa-youtube,
+.icon-button:hover .fa-pinterest {
+	color: white;
+}
+
+@media all and (max-width: 680px) {
+  .icon-button {
+    border-radius: 1.6rem;
+    font-size: 0.8rem;
+    height: 1.6rem;
+    line-height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  .icon-button:hover span {
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 1.6rem;
+    margin: -0.8rem;
+  }
+
+  /* Icons */
+  .icon-button i {
+	  height: 1.6rem;
+	  line-height: 1.6rem;
+	  width: 1.6rem;
+  }
+  body {
+
+	  padding: 10px;
+  }
+  .pinterest {
+   display: none; 
+  }
+
+}
+
+.profile-icon
+{
+	padding: 10em 0;
+}
+
+.profile-text
+{
+	padding: 2rem 1rem;
+}
+
+.profile-text h2
+{
+	color: #fff;
+	font-family: 'Roboto Mono', monospace;
+	font-weight: 500;
+	font-size: 30px;
+	letter-spacing: 1.5px;
+}
+
+.profile-text span
+{
+	padding: 0 0 0 1rem;
+}
+
+
+
+/*<about-section>*/
+
+.about-section
+{
+	
+	background-size: cover;
+	width: auto;
+	height: 700px;
+	background: linear-gradient(-45deg, #08140e, #e59f16, #de8512, #6d230f, #988312);
+	animation: gradient 15s ease infinite;
+	clip-path: polygon(0 0, 100% 0%, 100% 69%, 0% 100%);
+}
+.about-head
+{
+	text-align: center;
+	padding-bottom: 3rem;
+	
+}
+.about-head h2
+{
+	font-family: 'Inconsolata', monospace;
+	color: #fff;
+	letter-spacing: 2.6px;
+	font-weight: 700;
+	font-size: 35px;
+	padding: 2rem 0;
+}
+
+.text-center p
+{
+	font-family: 'Satisfy', cursive;
+	color: #000;
+	font-size: 30px;
+	padding: 4rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content:space-around;
+    flex-direction: row;
+
+
+}
+    
+
+
+.about-text
+{
+	padding-left: 34rem;
+}
+
+
+/*<about-section>*/
+
+
+/*gallery-section*/
+
+
+.gallery-section
+{
+	background: url(../images/hari4.gif);
+	/*background-image: linear-gradient(to right bottom, #b34629d9, hsla(12, 47%, 49%, 0.6)), url(../images/hari4.gif);*/
+	/*background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)), url(../images/hari4.gif);*/
+	background-size: cover;
+	height: auto;
+	width: 100%;
+	background-repeat: no-repeat;
+}
+
+.gallery-img img:hover
+{
+	filter: grayscale(100%);
+	transform: scale(1.05);
+}
+.gallary-slide
+{
+	padding: 1rem;
+}
+
+.gallary-head h2
+{
+	font-family: 'Inconsolata', monospace;
+	color: #fff;
+	letter-spacing: 2.6px;
+	font-weight: 700;
+	font-size: 35px;
+}
+
+.gallary-head
+{
+	padding: 2rem;
+}
+.gallery-img
+{
+	transition: 1s;
+	padding: 0 0 3rem 0;
+}
+
+.gallary-slide img
+{
+border:2px solid #fff;
+border-radius: 15px;
+}
+
+/*gallery-section*/
+
+
+/*footer-section*/
+
+.footer-section
+{
+	background-size: cover;
+	height: 760px;
+	width: 100%;
+	/*background: url(../images/pro3.jpg);*/
+	background-image: linear-gradient(to right bottom, #de8512, hsla(12, 47%, 49%, -0.4)), url(../images/pro3.jpg);
+	background-repeat: no-repeat;
+}
+
+
+.footer-text
+{
+	text-align: center;
+	padding: 8rem 0 0 0;
+}
+
+.footer-text h1
+{
+	font-size: 45px;
+	color: #fff;
+	font-family: 'Passion One', cursive;
+	padding: 10rem 0 1.5rem 0;
+	letter-spacing: 4px;
+}
+
+.footer-text a
+{
+	font-family: 'Fredoka One', cursive;
+	font-size: 15px;
+	color: #000;
+}
+
+.footer-text a:hover
+{
+transform: scale(1.2);
+color: #000;
+}
+
+.btn-colour
+{
+	background: linear-gradient( #ffff, #c27611);
+	border:none;
+	width: 150px;
+	border-radius: 15px;
+}
+
+
+.footer-bg1
+{
+	background: linear-gradient(-45deg, #0d1d10,  #988312);
+	background-size: cover;
+	width: auto;
+	height: 288px;
+    margin-top: -18rem;
+}
+/*footer-section*/
+
+
+/*Preloader*/
+
+#preloader{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#605a12;
+    position:fixed;
+    z-index: 16000;
+  }
+  
+  #name{
+    color: #0e1119;
+    font-family:'Poppins',sans-serif;
+    font-weight:500;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    letter-spacing:.5rem;
+    font-size:30px;
+  }
+/*Preloader*/
+
+/*Respons-420*/
+
+@media (max-width: 420px)
+{
+	body
+	{
+		padding: 0;
+	}
+	.profile-img
+	{
+	padding: 1.5rem;
+    text-align: center;
+	}
+
+	.imgButton:before{
+		left: -40px;
+	}
+	.profile-icon
+	{
+		padding: 31px;
+	}
+	.profile-icon h2
+	{
+		font-size: 15px;
+	}
+	.profile-text {
+    padding: 0.500rem 0;
+	}
+	.profile-text span {
+    padding: 0;
+	}
+	.about-head h2
+	{
+		font-size: 20px;
+		padding: 2rem 0;
+	}
+	.gallary-slide
+	{
+		padding: 0.500rem;
+	}
+	.gallery img
+	{
+		display: none;
+	}
+	.about-text
+	{
+		padding:0 2rem;
+	}
+
+	.text-center p {
+    font-family: 'Satisfy', cursive;
+    color: #000;
+    font-size: 25px;
+    padding-top: 6rem;
+}
+
+	.gallery-section
+	{
+	margin-top: -18rem;
+    padding-top: 19rem;
+	}
+	.footer-text h2
+	{
+		font-size: 14px;
+	}
+	.footer-text a
+	{
+		font-size: 14px;
+	}
+	.footer-text h1 
+	{
+    font-size: 19px;
+    padding: 1px 0;
+    margin-top: -36px;
+    letter-spacing: 0;
+    margin-bottom: 1rem;
+		}
+	
+	.footer-section
+	{
+    height: 250px;
+	}
+	.btn-colour
+	{
+    width: 94px;
+}
+}
+
+
+/*Respons-420*/
+
+/*Respons-768*/
+
+@media (max-width: 768px)
+{
+.profile-img
+{
+	text-align: center;
+}
+.profile-img {
+    padding: 4rem 0rem;
+}
+.profile-icon {
+    padding: 4em 53px;
+}
+
+.about-section {
+	height: 904px;
+}
+
+.gallery-section {
+	margin-top: -25rem;
+    padding-top: 25rem;
+	}
+
+}
+
+
+/*Respons-768*/
