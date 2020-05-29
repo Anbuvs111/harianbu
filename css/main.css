@@ -459,7 +459,7 @@ color: #000;
   }
   
   #name{
-    color: #0e1119;
+    color: #deb617;
     font-family:'Poppins',sans-serif;
     font-weight:500;
     position:absolute;
@@ -469,6 +469,7 @@ color: #000;
     letter-spacing:.5rem;
     font-size:30px;
   }
+
 /*Preloader*/
 
 /*Respons-420*/
